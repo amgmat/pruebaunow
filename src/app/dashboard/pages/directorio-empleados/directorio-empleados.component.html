@@ -1,0 +1,18 @@
+<div class="container">
+    <h2 class="directorio__titulo">Directorio de empleados</h2>
+    
+    <div class="directorio__buscar">
+        <input class="directorio__input" type="text" placeholder="Buscar...">
+    </div>
+
+    <div class="row mt-3 justify-content-center">
+        <div *ngFor="let usuario of usuarios" class="col-5 directorio__card">
+            <div class="directorio__card__content">
+                <h5>{{usuario.nombre}}</h5>
+                <p>{{usuario.puesto}}</p>
+                <p>{{usuario.correo}}</p>
+                <p>{{usuario.telefono}}</p>
+            </div>
+        </div>
+    </div>
+</div>

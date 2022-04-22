@@ -1,0 +1,30 @@
+<div class="loginScreen">
+    <div class="loginScreen__card">
+        <h2>endalia</h2>
+
+        <h3>Bienvenido/a</h3>
+
+        <span class="loginScreen__text">Introduce las crendenciales para acceder</span>
+
+        <div class="form">
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <div class="form__input">
+                    <label class="form__label" for="">Usuario</label>
+                    <input formControlName="usuario" type="text" placeholder="Ingresar Correo">
+                    <span *ngIf="showError('usuario')" class="form__alert">Ingresa un correo valido</span>
+                </div>
+
+                <div class="form__input">
+                    <label class="form__label" for="">Contraseña</label>
+                    <input formControlName="password" type="password" placeholder="Ingresar Contraseña">
+                    <span *ngIf="showError('password')" class="form__alert">Ingresa una contraseña</span>
+                </div>
+                
+                <div>
+                    <button class="form__button">Acceder</button>
+                </div>
+                    
+            </form>
+        </div>
+    </div>
+</div>

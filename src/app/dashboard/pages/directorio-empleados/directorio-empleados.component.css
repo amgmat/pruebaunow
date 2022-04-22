@@ -1,0 +1,24 @@
+
+.directorio__titulo{
+    padding:20px 0;
+}
+
+.directorio__buscar{
+    width:300px;
+}
+
+.directorio__input{
+    width:100%;
+}
+
+.directorio__usuarios{
+    display:flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.directorio__card{
+    margin:10px;
+    background-color: #E5E7EC;
+    border: 1px solid;
+}

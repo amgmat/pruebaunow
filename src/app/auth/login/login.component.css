@@ -1,0 +1,76 @@
+.loginScreen{
+    background-image:url('/assets/img/fondo-oficina.jpeg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginScreen__card{
+    background-color:white;
+    width:35vw;
+    border-radius: 10px;
+    display:block;
+    padding:20px;
+}
+
+h2{
+    text-align: center;
+    color:#335EFF;
+}
+
+h3{
+    margin-top:20px;
+}
+
+.loginScreen__text{
+    margin-top: 40px;
+}
+
+.form{
+    /* text-align: center; */
+    margin:12px 0;
+}
+
+.form__input{
+     margin:10px 0px;
+     /* flex-direction: row; */
+     display:flex;
+     flex-wrap: wrap;
+}
+
+.form__label{
+    padding-right:12px ;
+}
+
+.form__alert{
+    color:red;
+}
+
+.form__button{
+    background-color:#335EFF;
+    padding: 4px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    width:100%;
+}
+
+.form__button:hover{
+    cursor:pointer;
+}
+
+@media (max-width: 600px) {
+    .loginScreen__card{
+        width:50vw;
+        padding:10px;
+    }
+  }
+@media (max-width: 500px) {
+    .loginScreen__card{
+        width:70vw;
+        padding:10px;
+    }
+  }
